@@ -1,0 +1,84 @@
+body{
+  background-color: black;
+  padding-bottom: 100px;
+}
+.page-thunder-to-text {
+  position: relative;
+  overflow: hidden;
+}
+.page-thunder-to-text canvas {
+  display: block;
+}
+.page-thunder-to-text input {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  display: block;
+  outline: none;
+  background-color: rgba(38, 50, 56, 0.2);
+  color: #fefefe;
+  border: 1px solid white;
+  font-weight: bold;
+  width: 40px;
+  min-width: 300px;
+  margin: auto;
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+.page-thunder-to-text input:hover, .page-thunder-to-text input:focus {
+  border: 1px solid rgba(38, 50, 56, 0.6);
+}
+.page-thunder-to-text input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+
+#gameContainer {
+  display: none; /* Mengaktifkan flexbox */
+  justify-content: center; /* Pusatkan secara horizontal */
+  align-items: center; /* Pusatkan secara vertikal */
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  transform: translate(-50%, -50%); /* Pusatkan QRIS */
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  padding-top: 2rem;
+  width: 23rem;
+  border-radius: 10px;
+  z-index: 100; /* Pastikan berada di atas elemen lain */
+  border: 2px solid cyan;
+}
+
+h2 {
+  font-weight: 700;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+}
+
+.btn {
+  background-color: cyan;
+  margin-top: 2rem;
+  border-radius: 10px;
+  color: rgb(4, 4, 4);
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  font-weight: 900;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: aliceblue;
+  font-size: 20px;
+  cursor: pointer;
+}

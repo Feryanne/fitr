@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eid Mubarak</title>
+    <link rel="stylesheet" href="ucapan.css" />
+  </head>
+  <body>
+    <span class="close" onclick="openContainer()">.</span>
+    <canvas id="fireworksCanvas"></canvas>
+    <div class="message">
+      <h1>
+        تَقَبَّلَ اللَّهُ مِنَّا وَمِنْكُمْ
+        <span class="close" onclick="openContainer()">.</span>
+      </h1>
+      <br />
+      <p>
+        "MOHON MAAF LAHIR DAN BATIN🙏."
+        <span class="close" onclick="openContainer()">,</span>
+      </p>
+      <span class="close" onclick="openContainer()">,</span>
+    </div>
+
+    <div id="musicPlayer">
+      <audio id="audio" src="takbir.mp3" autoplay loop></audio>
+      <button onclick="togglePlayPause()"> PAUSE Musik
+      <span class="close" onclick="openContainer()"></span>
+      </button>
+    </div>
+
+    <div id="qrisContainer">
+      <span class="close" onclick="closeContainer()">x</span>
+      <h2>
+        Mau melihat halaman<br />
+        yang lebih menarik?
+      </h2>
+      <button class="btn" onclick="showQris()">lihat halaman</button>
+    </div>
+    <span class="close" onclick="openContainer()">,</span>
+    <div id="qrisModal" class="modal">
+      <div class="modal-content">
+        <p>Beri  saya THR untuk melihat<br>halaman yang menarik :v</p>
+        <span class="close" onclick="closeQris()">&times;</span>
+        <img src="qris.jpg" alt="QRIS Payment" width="250" />
+        <button class="btn2" onclick="submit()">Lihat Halaman</button>
+        <p id="statusMessage"></p>
+      </div>
+    </div>
+
+    <script src="ucapan.js"></script>
+  </body>
+</html>

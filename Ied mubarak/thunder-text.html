@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="thunder-text.css" />
+    <title>Thunder Text</title>
+  </head>
+  <body>
+    <!-- creadits to the writter @haidang -->
+     <span class="close" onclick="openGame()"> <h2>P</h2> </span>
+    <div class="page page-thunder-to-text">
+      <input id="input" type="text" maxlength="24" placeholder="I love you!" />
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <audio id="background-audio" autoplay loop>
+      <source src="abaout you.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <div id="gameContainer">
+      <span class="close" onclick="closeGame()">x</span>
+      <h2>
+        Ada yang lebih menarik nih!
+      </h2>
+      <button class="btn" onclick="album()">album</button>
+      <button class="btn" onclick="kucing()">game2</button>
+      <button class="btn" onclick="paus()">game3</button>
+    </div>
+     <span class="close" onclick="openGame()"> <h2>P</h2> </span>
+    <script src="thunder-text.js"></script>
+  </body>
+</html>

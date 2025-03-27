@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('background.jp') center/cover no-repeat;
+    background-color: black;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    box-shadow: 5rem 5rem 15rem rgba(0, 0, 0, 0.7);
+}
+
+.door {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border: 5px solid rgb(125, 99, 68);
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.7);
+    transition: transform 1.5s ease-in-out;
+}
+
+.left {
+    left: 0;
+    transform-origin: left;
+    background: url('th.jpeg') center/cover no-repeat;
+    background-position: left;
+}
+
+.right {
+    right: 0;
+    transform-origin: right;
+    background: url('th.jpeg') center/cover no-repeat;
+    background-position: right;
+}
+
+.open-button {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background: rgb(195, 155, 107);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5rem rgba(0, 0, 0, 0.3);
+}
